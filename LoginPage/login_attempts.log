@@ -1,0 +1,219 @@
+2025-03-27 16:12:21,699 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-27 16:12:21,699 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 16:12:21,701 - INFO -  * Restarting with stat
+2025-03-27 16:12:22,211 - WARNING -  * Debugger is active!
+2025-03-27 16:12:22,216 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 16:12:48,038 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-27 16:12:48,038 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 16:12:48,039 - INFO -  * Restarting with stat
+2025-03-27 16:12:48,552 - WARNING -  * Debugger is active!
+2025-03-27 16:12:48,556 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 16:13:01,631 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:01] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-27 16:13:01,647 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:01] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 16:13:01,821 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:01] "GET /static/css/style.css?v=1.1 HTTP/1.1" 200 -
+2025-03-27 16:13:01,834 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:01] "[33mGET /static/css/images/bg.jpg HTTP/1.1[0m" 404 -
+2025-03-27 16:13:01,869 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:01] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-03-27 16:13:02,307 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:02] "[33mGET /static/images/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 16:13:07,692 - INFO - Starting face login process
+2025-03-27 16:13:08,448 - INFO - Successful face login for user: Hari
+2025-03-27 16:13:08,893 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:08] "[32mPOST /login/face HTTP/1.1[0m" 302 -
+2025-03-27 16:13:08,899 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:08] "GET /home HTTP/1.1" 200 -
+2025-03-27 16:13:12,331 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:12] "GET /register/ HTTP/1.1" 200 -
+2025-03-27 16:13:12,351 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:12] "GET /static/css/style.css?v=1.3 HTTP/1.1" 200 -
+2025-03-27 16:13:12,375 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:12] "GET /register/ HTTP/1.1" 200 -
+2025-03-27 16:13:12,426 - INFO - 127.0.0.1 - - [27/Mar/2025 16:13:12] "[33mGET /static/css/images/bg.jpg HTTP/1.1[0m" 404 -
+2025-03-27 16:26:11,165 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-27 16:26:11,166 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 16:26:11,167 - INFO -  * Restarting with stat
+2025-03-27 16:26:11,651 - WARNING -  * Debugger is active!
+2025-03-27 16:26:11,654 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 16:26:23,509 - INFO - 127.0.0.1 - - [27/Mar/2025 16:26:23] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 16:26:23,682 - INFO - 127.0.0.1 - - [27/Mar/2025 16:26:23] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-03-27 16:26:23,682 - INFO - 127.0.0.1 - - [27/Mar/2025 16:26:23] "GET /static/css/style.css?v=1.1 HTTP/1.1" 200 -
+2025-03-27 16:26:23,695 - INFO - 127.0.0.1 - - [27/Mar/2025 16:26:23] "[33mGET /static/css/images/bg.jpg HTTP/1.1[0m" 404 -
+2025-03-27 16:26:30,136 - INFO - 127.0.0.1 - - [27/Mar/2025 16:26:30] "GET /register/ HTTP/1.1" 200 -
+2025-03-27 16:26:30,163 - INFO - 127.0.0.1 - - [27/Mar/2025 16:26:30] "GET /static/css/style.css?v=1.3 HTTP/1.1" 200 -
+2025-03-27 16:26:30,176 - INFO - 127.0.0.1 - - [27/Mar/2025 16:26:30] "GET /register/ HTTP/1.1" 200 -
+2025-03-27 16:26:30,205 - INFO - 127.0.0.1 - - [27/Mar/2025 16:26:30] "[33mGET /static/css/images/bg.jpg HTTP/1.1[0m" 404 -
+2025-03-27 16:54:02,445 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-27 16:54:02,445 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 16:54:02,446 - INFO -  * Restarting with stat
+2025-03-27 16:54:02,946 - WARNING -  * Debugger is active!
+2025-03-27 16:54:02,949 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 16:54:05,444 - INFO - 127.0.0.1 - - [27/Mar/2025 16:54:05] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 16:54:05,629 - INFO - 127.0.0.1 - - [27/Mar/2025 16:54:05] "GET /static/css/style.css?v=1.1 HTTP/1.1" 200 -
+2025-03-27 16:54:05,632 - INFO - 127.0.0.1 - - [27/Mar/2025 16:54:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-27 16:54:05,656 - INFO - 127.0.0.1 - - [27/Mar/2025 16:54:05] "[33mGET /static/css/{{%20url_for('static',%20filename='images/bg.jpg')%20}} HTTP/1.1[0m" 404 -
+2025-03-27 16:54:18,890 - INFO - 127.0.0.1 - - [27/Mar/2025 16:54:18] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-27 16:54:18,899 - INFO - 127.0.0.1 - - [27/Mar/2025 16:54:18] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 16:54:18,923 - INFO - 127.0.0.1 - - [27/Mar/2025 16:54:18] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-27 16:54:18,935 - INFO - 127.0.0.1 - - [27/Mar/2025 16:54:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-27 16:54:18,961 - INFO - 127.0.0.1 - - [27/Mar/2025 16:54:18] "[33mGET /static/css/{{%20url_for('static',%20filename='images/bg.jpg')%20}} HTTP/1.1[0m" 404 -
+2025-03-27 16:57:14,263 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-27 16:57:14,263 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 16:57:14,265 - INFO -  * Restarting with stat
+2025-03-27 16:57:14,783 - WARNING -  * Debugger is active!
+2025-03-27 16:57:14,788 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 16:57:20,698 - INFO - 127.0.0.1 - - [27/Mar/2025 16:57:20] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-27 16:57:20,711 - INFO - 127.0.0.1 - - [27/Mar/2025 16:57:20] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 16:57:20,874 - INFO - 127.0.0.1 - - [27/Mar/2025 16:57:20] "GET /static/css/style.css?v=863 HTTP/1.1" 200 -
+2025-03-27 16:57:20,881 - INFO - 127.0.0.1 - - [27/Mar/2025 16:57:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-27 16:57:20,884 - INFO - 127.0.0.1 - - [27/Mar/2025 16:57:20] "[33mGET /static/css/{{%20url_for('static',%20filename='images/bg.jpg')%20}} HTTP/1.1[0m" 404 -
+2025-03-27 17:00:34,115 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-27 17:00:34,116 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 17:00:34,117 - INFO -  * Restarting with stat
+2025-03-27 17:00:34,623 - WARNING -  * Debugger is active!
+2025-03-27 17:00:34,627 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 17:00:39,608 - INFO - 127.0.0.1 - - [27/Mar/2025 17:00:39] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-27 17:00:39,619 - INFO - 127.0.0.1 - - [27/Mar/2025 17:00:39] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 17:00:39,669 - INFO - 127.0.0.1 - - [27/Mar/2025 17:00:39] "[35m[1mGET /static/css/style.css?v=363 HTTP/1.1[0m" 500 -
+2025-03-27 17:00:39,779 - INFO - 127.0.0.1 - - [27/Mar/2025 17:00:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-27 17:01:16,265 - INFO -  * Detected change in 'C:\\Users\\harinath.karnati\\Documents\\Python\\LoginPage\\app.py', reloading
+2025-03-27 17:01:16,327 - INFO -  * Restarting with stat
+2025-03-27 17:01:16,827 - WARNING -  * Debugger is active!
+2025-03-27 17:01:16,831 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 17:01:24,412 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-27 17:01:24,412 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 17:01:24,413 - INFO -  * Restarting with stat
+2025-03-27 17:01:24,901 - WARNING -  * Debugger is active!
+2025-03-27 17:01:24,905 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 17:01:29,914 - INFO - 127.0.0.1 - - [27/Mar/2025 17:01:29] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-27 17:01:29,922 - INFO - 127.0.0.1 - - [27/Mar/2025 17:01:29] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 17:01:29,970 - INFO - 127.0.0.1 - - [27/Mar/2025 17:01:29] "[35m[1mGET /static/css/style.css?v=760 HTTP/1.1[0m" 500 -
+2025-03-27 17:01:30,100 - INFO - 127.0.0.1 - - [27/Mar/2025 17:01:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-27 17:03:28,766 - INFO -  * Detected change in 'C:\\Users\\harinath.karnati\\Documents\\Python\\LoginPage\\app.py', reloading
+2025-03-27 17:03:28,823 - INFO -  * Restarting with stat
+2025-03-27 17:08:01,260 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-27 17:08:01,261 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 17:08:01,262 - INFO -  * Restarting with stat
+2025-03-27 17:08:01,759 - WARNING -  * Debugger is active!
+2025-03-27 17:08:01,763 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 17:08:04,269 - INFO - 127.0.0.1 - - [27/Mar/2025 17:08:04] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 17:08:04,289 - ERROR - Error serving CSS file style.css: static/css/style.css
+2025-03-27 17:08:04,290 - INFO - 127.0.0.1 - - [27/Mar/2025 17:08:04] "[33mGET /static/css/style.css?v=69 HTTP/1.1[0m" 404 -
+2025-03-27 17:08:04,408 - INFO - 127.0.0.1 - - [27/Mar/2025 17:08:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-27 17:08:05,572 - INFO - 127.0.0.1 - - [27/Mar/2025 17:08:05] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 17:08:05,595 - ERROR - Error serving CSS file style.css: static/css/style.css
+2025-03-27 17:08:05,596 - INFO - 127.0.0.1 - - [27/Mar/2025 17:08:05] "[33mGET /static/css/style.css?v=331 HTTP/1.1[0m" 404 -
+2025-03-27 17:08:05,603 - INFO - 127.0.0.1 - - [27/Mar/2025 17:08:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-27 17:08:19,041 - INFO -  * Detected change in 'C:\\Users\\harinath.karnati\\Documents\\Python\\LoginPage\\app.py', reloading
+2025-03-27 17:08:19,091 - INFO -  * Restarting with stat
+2025-03-27 17:08:19,594 - WARNING -  * Debugger is active!
+2025-03-27 17:08:19,598 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 17:08:24,236 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-27 17:08:24,236 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 17:08:24,238 - INFO -  * Restarting with stat
+2025-03-27 17:08:24,790 - WARNING -  * Debugger is active!
+2025-03-27 17:08:24,794 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 17:08:25,779 - INFO - 127.0.0.1 - - [27/Mar/2025 17:08:25] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 17:08:25,909 - INFO - 127.0.0.1 - - [27/Mar/2025 17:08:25] "GET /static/css/style.css?v=806 HTTP/1.1" 200 -
+2025-03-27 17:08:25,914 - INFO - 127.0.0.1 - - [27/Mar/2025 17:08:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-27 17:08:25,920 - INFO - 127.0.0.1 - - [27/Mar/2025 17:08:25] "[33mGET /static/css/{{%20url_for('static',%20filename='images/bg.jpg')%20}} HTTP/1.1[0m" 404 -
+2025-03-27 17:11:28,609 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-27 17:11:28,609 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 17:11:28,611 - INFO -  * Restarting with stat
+2025-03-27 17:11:29,134 - WARNING -  * Debugger is active!
+2025-03-27 17:11:29,138 - INFO -  * Debugger PIN: 301-402-787
+2025-03-27 17:11:31,591 - INFO - 127.0.0.1 - - [27/Mar/2025 17:11:31] "GET /login/ HTTP/1.1" 200 -
+2025-03-27 17:11:31,751 - INFO - 127.0.0.1 - - [27/Mar/2025 17:11:31] "GET /static/css/style.css?v=1.1 HTTP/1.1" 200 -
+2025-03-27 17:11:31,765 - INFO - 127.0.0.1 - - [27/Mar/2025 17:11:31] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+2025-03-27 17:11:31,770 - INFO - 127.0.0.1 - - [27/Mar/2025 17:11:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-27 17:12:00,337 - INFO - 127.0.0.1 - - [27/Mar/2025 17:12:00] "GET /register/ HTTP/1.1" 200 -
+2025-03-27 17:12:00,376 - INFO - 127.0.0.1 - - [27/Mar/2025 17:12:00] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-27 17:12:00,409 - INFO - 127.0.0.1 - - [27/Mar/2025 17:12:00] "GET /register/ HTTP/1.1" 200 -
+2025-03-27 17:12:00,477 - INFO - 127.0.0.1 - - [27/Mar/2025 17:12:00] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-29 12:38:37,852 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-29 12:38:37,852 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 12:38:37,854 - INFO -  * Restarting with stat
+2025-03-29 12:38:38,505 - WARNING -  * Debugger is active!
+2025-03-29 12:38:38,510 - INFO -  * Debugger PIN: 301-402-787
+2025-03-29 12:38:45,841 - INFO - 127.0.0.1 - - [29/Mar/2025 12:38:45] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-29 12:38:45,866 - INFO - 127.0.0.1 - - [29/Mar/2025 12:38:45] "GET /login/ HTTP/1.1" 200 -
+2025-03-29 12:38:46,022 - INFO - 127.0.0.1 - - [29/Mar/2025 12:38:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 12:38:46,024 - INFO - 127.0.0.1 - - [29/Mar/2025 12:38:46] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-29 12:38:47,020 - INFO - 127.0.0.1 - - [29/Mar/2025 12:38:47] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-29 12:38:49,522 - INFO - 127.0.0.1 - - [29/Mar/2025 12:38:49] "GET /register/ HTTP/1.1" 200 -
+2025-03-29 12:38:49,549 - INFO - 127.0.0.1 - - [29/Mar/2025 12:38:49] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-29 12:38:49,561 - INFO - 127.0.0.1 - - [29/Mar/2025 12:38:49] "GET /register/ HTTP/1.1" 200 -
+2025-03-29 12:39:15,930 - INFO - 127.0.0.1 - - [29/Mar/2025 12:39:15] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-29 12:43:24,173 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-29 12:43:24,173 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 12:43:24,174 - INFO -  * Restarting with stat
+2025-03-29 12:43:24,760 - WARNING -  * Debugger is active!
+2025-03-29 12:43:24,764 - INFO -  * Debugger PIN: 301-402-787
+2025-03-29 12:43:33,088 - INFO - 127.0.0.1 - - [29/Mar/2025 12:43:33] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-29 12:43:33,104 - INFO - 127.0.0.1 - - [29/Mar/2025 12:43:33] "GET /login/ HTTP/1.1" 200 -
+2025-03-29 12:43:33,266 - INFO - 127.0.0.1 - - [29/Mar/2025 12:43:33] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-29 12:43:33,267 - INFO - 127.0.0.1 - - [29/Mar/2025 12:43:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 12:43:33,913 - INFO - 127.0.0.1 - - [29/Mar/2025 12:43:33] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-29 12:44:44,567 - INFO - Starting face login process
+2025-03-29 12:45:22,457 - ERROR - Database connection error: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+2025-03-29 12:45:22,457 - ERROR - Face login error: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+2025-03-29 12:45:22,947 - INFO - 127.0.0.1 - - [29/Mar/2025 12:45:22] "POST /login/face HTTP/1.1" 200 -
+2025-03-29 12:45:34,301 - INFO - 127.0.0.1 - - [29/Mar/2025 12:45:34] "GET /login/ HTTP/1.1" 200 -
+2025-03-29 12:45:34,336 - INFO - 127.0.0.1 - - [29/Mar/2025 12:45:34] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-29 12:45:34,374 - INFO - 127.0.0.1 - - [29/Mar/2025 12:45:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 12:45:34,465 - INFO - 127.0.0.1 - - [29/Mar/2025 12:45:34] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-29 12:45:39,699 - INFO - Starting face login process
+2025-03-29 12:45:40,547 - INFO - Successful face login for user: Hari
+2025-03-29 12:45:40,976 - INFO - 127.0.0.1 - - [29/Mar/2025 12:45:40] "[32mPOST /login/face HTTP/1.1[0m" 302 -
+2025-03-29 12:45:40,981 - INFO - 127.0.0.1 - - [29/Mar/2025 12:45:40] "GET /home HTTP/1.1" 200 -
+2025-03-29 12:48:16,838 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-29 12:48:16,838 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 12:48:16,840 - INFO -  * Restarting with stat
+2025-03-29 12:48:17,367 - WARNING -  * Debugger is active!
+2025-03-29 12:48:17,371 - INFO -  * Debugger PIN: 301-402-787
+2025-03-29 12:48:21,996 - INFO - 127.0.0.1 - - [29/Mar/2025 12:48:21] "GET /login/ HTTP/1.1" 200 -
+2025-03-29 12:48:22,168 - INFO - 127.0.0.1 - - [29/Mar/2025 12:48:22] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-29 12:48:22,174 - INFO - 127.0.0.1 - - [29/Mar/2025 12:48:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 12:48:22,191 - INFO - 127.0.0.1 - - [29/Mar/2025 12:48:22] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-29 12:54:33,338 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-29 12:54:33,338 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 12:54:33,339 - INFO -  * Restarting with stat
+2025-03-29 12:54:33,907 - WARNING -  * Debugger is active!
+2025-03-29 12:54:33,913 - INFO -  * Debugger PIN: 301-402-787
+2025-03-29 12:54:35,531 - INFO - 127.0.0.1 - - [29/Mar/2025 12:54:35] "GET /login/ HTTP/1.1" 200 -
+2025-03-29 12:54:35,687 - INFO - 127.0.0.1 - - [29/Mar/2025 12:54:35] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-29 12:54:35,706 - INFO - 127.0.0.1 - - [29/Mar/2025 12:54:35] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-29 12:54:35,712 - INFO - 127.0.0.1 - - [29/Mar/2025 12:54:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 12:54:48,676 - INFO - 127.0.0.1 - - [29/Mar/2025 12:54:48] "GET /register/ HTTP/1.1" 200 -
+2025-03-29 12:54:48,709 - INFO - 127.0.0.1 - - [29/Mar/2025 12:54:48] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-29 12:54:48,725 - INFO - 127.0.0.1 - - [29/Mar/2025 12:54:48] "GET /register/ HTTP/1.1" 200 -
+2025-03-29 12:54:48,783 - INFO - 127.0.0.1 - - [29/Mar/2025 12:54:48] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-29 13:00:14,884 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-29 13:00:14,884 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 13:00:14,885 - INFO -  * Restarting with stat
+2025-03-29 13:00:15,405 - WARNING -  * Debugger is active!
+2025-03-29 13:00:15,410 - INFO -  * Debugger PIN: 301-402-787
+2025-03-29 13:00:17,375 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:17] "GET /login/ HTTP/1.1" 200 -
+2025-03-29 13:00:17,547 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:17] "GET /static/css/style.css?v=1.1 HTTP/1.1" 200 -
+2025-03-29 13:00:17,555 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:17] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-03-29 13:00:17,562 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:17] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-29 13:00:20,936 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:20] "GET /register/ HTTP/1.1" 200 -
+2025-03-29 13:00:20,962 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:20] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-29 13:00:20,983 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:20] "GET /register/ HTTP/1.1" 200 -
+2025-03-29 13:00:20,984 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 13:00:21,034 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:21] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-29 13:00:44,994 - INFO - Starting face login process
+2025-03-29 13:00:46,077 - INFO - Successful face login for user: Hari
+2025-03-29 13:00:46,537 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:46] "[32mPOST /login/face HTTP/1.1[0m" 302 -
+2025-03-29 13:00:46,543 - INFO - 127.0.0.1 - - [29/Mar/2025 13:00:46] "GET /home HTTP/1.1" 200 -
+2025-03-29 13:01:13,252 - INFO - 127.0.0.1 - - [29/Mar/2025 13:01:13] "GET /login/ HTTP/1.1" 200 -
+2025-03-29 13:01:13,274 - INFO - 127.0.0.1 - - [29/Mar/2025 13:01:13] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-29 13:01:13,294 - INFO - 127.0.0.1 - - [29/Mar/2025 13:01:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 13:01:13,334 - INFO - 127.0.0.1 - - [29/Mar/2025 13:01:13] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -

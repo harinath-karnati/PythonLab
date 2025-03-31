@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=1.1">
+    <link rel="stylesheet" href="https://unilus.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
+        .error-message {
+            background-color: #ffdddd;
+            border: 1px solid #ff0000;
+            color: #ff0000;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .preview-container {
+            text-align: center;
+            margin: 10px 0;
+        }
+        #imagePreview {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 50%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav_logo">Hari's CodingLab</a>
+  
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Home</a>
+                    <a href="#" class="nav_link">Product</a>
+                    <a href="#" class="nav_link">Services</a>
+                    <a href="#" class="nav_link">Contact</a>
+                </li>
+            </ul>
+  
+            <button class="button" id="form-open">SignUp</button>
+        </nav>
+    </header>
+
+    <div class="home">
+        <div class="form_container signup_form">
+            <span class="form_close">&times;</span>
+            <h2>Register</h2>
+            
+            <!-- Error Message Display -->
+            {% if msg %}
+                <div class="error-message">{{ msg }}</div>
+            {% endif %}
+
+            <form action="{{ url_for('register') }}" method="post" enctype="multipart/form-data" id="registrationForm">
+                <!-- Username Field -->
+                <div class="input_box">
+                    <input type="text" name="username" placeholder="Enter your username" 
+                           required minlength="4" maxlength="20">
+                    <i class="uil uil-user"></i>
+                </div>
+
+                <!-- Password Field -->
+                <div class="input_box">
+                    <input type="password" name="password" placeholder="Enter your password" 
+                           required minlength="8" maxlength="30" 
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <i class="uil uil-lock"></i>
+                    <small>At least 8 characters, 1 uppercase, 1 lowercase, 1 number</small>
+                </div>
+
+                <!-- Face Image Upload -->
+                <div class="input_box">
+                    <input type="file" name="face_image" accept="image/*" 
+                           required id="faceImageUpload">
+                    <i class="uil uil-camera"></i>
+                    <small>Upload a clear front-facing photo</small>
+                </div>
+
+                <!-- Image Preview Container -->
+                <div class="preview-container">
+                    <img id="imagePreview" src="#" alt="Image Preview">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="button">Register Now</button>
+            </form>
+
+            <!-- Links -->
+            <div class="login_signup">
+                Already have an account? 
+                <a href="{{ url_for('login') }}">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        // Auto-show the form when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const home = document.querySelector(".home");
+            if (home) {
+                home.classList.add("show");
+            }
+        });
+        
+        // Image preview functionality
+        document.getElementById('faceImageUpload').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const previewImg = document.getElementById('imagePreview');
+            
+            if (file) {
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    previewImg.src = e.target.result;
+                    previewImg.style.display = 'block';
+                }
+                
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>

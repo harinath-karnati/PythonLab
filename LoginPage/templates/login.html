@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=1.1">
+    <link rel="stylesheet" href="https://unilus.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav_logo">Hari's CodingLab</a>
+  
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Home</a>
+                    <a href="#" class="nav_link">Product</a>
+                    <a href="#" class="nav_link">Services</a>
+                    <a href="#" class="nav_link">Contact</a>
+                </li>
+            </ul>
+  
+            <button class="button" id="form-open">Login/SignUp</button>
+        </nav>
+    </header>
+
+    <!-- Home section with form -->
+    <div class="home">
+        <div class="form_container login_form">
+            <span class="form_close">&times;</span>
+            <h2>Login</h2>
+            
+            <!-- Credentials Login Form -->
+            <form action="{{ url_for('login_credentials') }}" method="post" id="credentialsLoginForm">
+                <!-- Username Field -->
+                <div class="input_box">
+                    <input type="text" name="username" placeholder="Enter your username" required>
+                    <i class="uil uil-user"></i>
+                </div>
+
+                <!-- Password Field -->
+                <div class="input_box">
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                    <i class="uil uil-lock"></i>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="button">Login</button>
+            </form>
+
+            <!-- Face ID Login Form -->
+            <form action="{{ url_for('login_face') }}" method="post" id="faceLoginForm">
+                <button type="submit" class="button">Login with Face ID</button>
+            </form>
+
+            <!-- Error Message -->
+            {% if msg %}
+                <p style="color: red; text-align: center;">{{ msg }}</p>
+            {% endif %}
+
+            <!-- Links -->
+            <div class="login_signup">
+                Don't have an account? 
+                <a href="{{ url_for('register') }}">Signup</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
