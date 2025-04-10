@@ -217,3 +217,467 @@
 2025-03-29 13:01:13,274 - INFO - 127.0.0.1 - - [29/Mar/2025 13:01:13] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
 2025-03-29 13:01:13,294 - INFO - 127.0.0.1 - - [29/Mar/2025 13:01:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
 2025-03-29 13:01:13,334 - INFO - 127.0.0.1 - - [29/Mar/2025 13:01:13] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-31 09:40:50,296 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-31 09:40:50,297 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 09:40:50,300 - INFO -  * Restarting with stat
+2025-03-31 09:40:50,804 - WARNING -  * Debugger is active!
+2025-03-31 09:40:50,809 - INFO -  * Debugger PIN: 842-270-011
+2025-03-31 09:41:24,830 - INFO - 127.0.0.1 - - [31/Mar/2025 09:41:24] "GET /login/ HTTP/1.1" 200 -
+2025-03-31 09:41:25,084 - INFO - 127.0.0.1 - - [31/Mar/2025 09:41:25] "GET /static/css/style.css?v=1.1 HTTP/1.1" 200 -
+2025-03-31 09:41:25,088 - INFO - 127.0.0.1 - - [31/Mar/2025 09:41:25] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-03-31 09:41:25,098 - INFO - 127.0.0.1 - - [31/Mar/2025 09:41:25] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+2025-03-31 09:57:51,345 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-31 09:57:51,346 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 09:57:51,348 - INFO -  * Restarting with stat
+2025-03-31 09:57:51,840 - WARNING -  * Debugger is active!
+2025-03-31 09:57:51,846 - INFO -  * Debugger PIN: 842-270-011
+2025-03-31 09:57:53,080 - INFO - 127.0.0.1 - - [31/Mar/2025 09:57:53] "GET /login/ HTTP/1.1" 200 -
+2025-03-31 09:57:53,241 - INFO - 127.0.0.1 - - [31/Mar/2025 09:57:53] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-31 09:57:53,250 - INFO - 127.0.0.1 - - [31/Mar/2025 09:57:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-31 09:57:53,253 - INFO - 127.0.0.1 - - [31/Mar/2025 09:57:53] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-31 09:58:02,223 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:02] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 09:58:02,245 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:02] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-31 09:58:02,255 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-31 09:58:02,257 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:02] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 09:58:02,282 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:02] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-31 09:58:05,873 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:05] "GET /login/ HTTP/1.1" 200 -
+2025-03-31 09:58:05,904 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:05] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-31 09:58:05,915 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-31 09:58:05,962 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:05] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-31 09:58:14,821 - INFO - Starting face login process
+2025-03-31 09:58:16,769 - INFO - Successful face login for user: Hari
+2025-03-31 09:58:17,192 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:17] "[32mPOST /login/face HTTP/1.1[0m" 302 -
+2025-03-31 09:58:17,197 - INFO - 127.0.0.1 - - [31/Mar/2025 09:58:17] "GET /home HTTP/1.1" 200 -
+2025-03-31 16:01:02,815 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-31 16:01:02,816 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 16:01:02,818 - INFO -  * Restarting with stat
+2025-03-31 16:01:03,309 - WARNING -  * Debugger is active!
+2025-03-31 16:01:03,315 - INFO -  * Debugger PIN: 842-270-011
+2025-03-31 16:01:12,507 - INFO - 127.0.0.1 - - [31/Mar/2025 16:01:12] "GET /login/ HTTP/1.1" 200 -
+2025-03-31 16:01:12,734 - INFO - 127.0.0.1 - - [31/Mar/2025 16:01:12] "GET /static/css/style.css?v=1.1 HTTP/1.1" 200 -
+2025-03-31 16:01:12,735 - INFO - 127.0.0.1 - - [31/Mar/2025 16:01:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-31 16:01:12,749 - INFO - 127.0.0.1 - - [31/Mar/2025 16:01:12] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-31 16:01:15,414 - INFO - 127.0.0.1 - - [31/Mar/2025 16:01:15] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 16:01:15,447 - INFO - 127.0.0.1 - - [31/Mar/2025 16:01:15] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-31 16:01:15,462 - INFO - 127.0.0.1 - - [31/Mar/2025 16:01:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-31 16:01:15,462 - INFO - 127.0.0.1 - - [31/Mar/2025 16:01:15] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 16:01:15,509 - INFO - 127.0.0.1 - - [31/Mar/2025 16:01:15] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-31 16:04:17,926 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-31 16:04:17,927 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 16:04:17,928 - INFO -  * Restarting with stat
+2025-03-31 16:04:18,440 - WARNING -  * Debugger is active!
+2025-03-31 16:04:18,445 - INFO -  * Debugger PIN: 842-270-011
+2025-03-31 16:04:22,400 - INFO - 127.0.0.1 - - [31/Mar/2025 16:04:22] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 16:04:22,451 - INFO - 127.0.0.1 - - [31/Mar/2025 16:04:22] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 16:04:22,564 - INFO - 127.0.0.1 - - [31/Mar/2025 16:04:22] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-31 16:04:22,565 - INFO - 127.0.0.1 - - [31/Mar/2025 16:04:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-31 16:04:22,572 - INFO - 127.0.0.1 - - [31/Mar/2025 16:04:22] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-31 16:11:33,133 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-31 16:11:33,133 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 16:11:33,135 - INFO -  * Restarting with stat
+2025-03-31 16:11:33,684 - WARNING -  * Debugger is active!
+2025-03-31 16:11:33,689 - INFO -  * Debugger PIN: 842-270-011
+2025-03-31 16:11:37,794 - INFO - 127.0.0.1 - - [31/Mar/2025 16:11:37] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 16:11:37,846 - INFO - 127.0.0.1 - - [31/Mar/2025 16:11:37] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 16:11:37,941 - INFO - 127.0.0.1 - - [31/Mar/2025 16:11:37] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-31 16:11:37,948 - INFO - 127.0.0.1 - - [31/Mar/2025 16:11:37] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-31 16:11:37,953 - INFO - 127.0.0.1 - - [31/Mar/2025 16:11:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-31 16:50:28,928 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-31 16:50:28,929 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 16:50:28,930 - INFO -  * Restarting with stat
+2025-03-31 16:50:29,514 - WARNING -  * Debugger is active!
+2025-03-31 16:50:29,519 - INFO -  * Debugger PIN: 842-270-011
+2025-03-31 16:50:35,843 - INFO - 127.0.0.1 - - [31/Mar/2025 16:50:35] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 16:50:35,896 - INFO - 127.0.0.1 - - [31/Mar/2025 16:50:35] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-03-31 16:50:35,902 - INFO - 127.0.0.1 - - [31/Mar/2025 16:50:35] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 16:50:36,019 - INFO - 127.0.0.1 - - [31/Mar/2025 16:50:36] "GET /static/css/style.css?v=1.1 HTTP/1.1" 200 -
+2025-03-31 16:50:36,028 - INFO - 127.0.0.1 - - [31/Mar/2025 16:50:36] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-31 16:50:36,037 - INFO - 127.0.0.1 - - [31/Mar/2025 16:50:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-31 16:50:36,038 - INFO - 127.0.0.1 - - [31/Mar/2025 16:50:36] "GET /static/js/face-capture.js HTTP/1.1" 200 -
+2025-03-31 16:54:16,190 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-31 16:54:16,191 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 16:54:16,192 - INFO -  * Restarting with stat
+2025-03-31 16:54:16,765 - WARNING -  * Debugger is active!
+2025-03-31 16:54:16,771 - INFO -  * Debugger PIN: 842-270-011
+2025-03-31 16:54:24,181 - INFO - 127.0.0.1 - - [31/Mar/2025 16:54:24] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 16:54:24,225 - INFO - 127.0.0.1 - - [31/Mar/2025 16:54:24] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-03-31 16:54:24,231 - INFO - 127.0.0.1 - - [31/Mar/2025 16:54:24] "GET /register/ HTTP/1.1" 200 -
+2025-03-31 16:54:24,350 - INFO - 127.0.0.1 - - [31/Mar/2025 16:54:24] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-03-31 16:54:24,357 - INFO - 127.0.0.1 - - [31/Mar/2025 16:54:24] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-03-31 16:54:24,367 - INFO - 127.0.0.1 - - [31/Mar/2025 16:54:24] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-03-31 16:54:24,367 - INFO - 127.0.0.1 - - [31/Mar/2025 16:54:24] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-03-31 16:54:50,601 - INFO - 127.0.0.1 - - [31/Mar/2025 16:54:50] "[31m[1mPOST /register/ HTTP/1.1[0m" 413 -
+2025-04-01 09:37:21,672 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 09:37:21,673 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 09:37:21,675 - INFO -  * Restarting with stat
+2025-04-01 09:37:22,334 - WARNING -  * Debugger is active!
+2025-04-01 09:37:22,339 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 09:37:29,271 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:29] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 09:37:29,483 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:29] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-01 09:37:29,483 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:29] "GET /static/css/style.css?v=1.1 HTTP/1.1" 200 -
+2025-04-01 09:37:29,523 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:29] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+2025-04-01 09:37:29,912 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:29] "[33mGET /static/images/favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 09:37:32,141 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:32] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:37:32,161 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:32] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:37:32,164 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:32] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 09:37:32,169 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:32] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:37:32,169 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:32] "GET /static/js/face-capture.js HTTP/1.1" 200 -
+2025-04-01 09:37:32,171 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:37:32,192 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:32] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:37:55,561 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:55] "POST /register/ HTTP/1.1" 200 -
+2025-04-01 09:37:55,589 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:55] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:37:55,600 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:55] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 09:37:55,605 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:55] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:37:55,608 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:37:55,608 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:55] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 09:37:55,616 - INFO - 127.0.0.1 - - [01/Apr/2025 09:37:55] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:38:25,483 - INFO - 127.0.0.1 - - [01/Apr/2025 09:38:25] "[31m[1mPOST /register/ HTTP/1.1[0m" 413 -
+2025-04-01 09:38:25,631 - INFO - 127.0.0.1 - - [01/Apr/2025 09:38:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 09:41:51,469 - INFO -  * Detected change in 'C:\\Users\\harinath.karnati\\OneDrive - Nabors\\My Documents\\GitHub\\PythonLab\\LoginPage\\app.py', reloading
+2025-04-01 09:41:51,524 - INFO -  * Restarting with stat
+2025-04-01 09:41:52,041 - WARNING -  * Debugger is active!
+2025-04-01 09:41:52,045 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 09:43:42,631 - INFO -  * Detected change in 'C:\\Users\\harinath.karnati\\OneDrive - Nabors\\My Documents\\GitHub\\PythonLab\\LoginPage\\app.py', reloading
+2025-04-01 09:43:42,677 - INFO -  * Restarting with stat
+2025-04-01 09:43:43,165 - WARNING -  * Debugger is active!
+2025-04-01 09:43:43,170 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 09:45:45,797 - INFO -  * Detected change in 'C:\\Users\\harinath.karnati\\OneDrive - Nabors\\My Documents\\GitHub\\PythonLab\\LoginPage\\app.py', reloading
+2025-04-01 09:45:45,850 - INFO -  * Restarting with stat
+2025-04-01 09:54:16,894 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 09:54:16,895 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 09:54:16,896 - INFO -  * Restarting with stat
+2025-04-01 09:54:17,365 - WARNING -  * Debugger is active!
+2025-04-01 09:54:17,370 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 09:54:27,686 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:27] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 09:54:27,828 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:27] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:54:27,834 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:54:27,839 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:27] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:54:31,392 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:31] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:54:31,412 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:31] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:54:31,413 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:31] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 09:54:31,420 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:54:31,423 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:31] "GET /static/js/face-capture.js HTTP/1.1" 200 -
+2025-04-01 09:54:31,423 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:31] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:54:31,442 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:31] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:54:44,992 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:44] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:54:45,009 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:45] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:54:45,016 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:45] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 09:54:45,019 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:54:45,025 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:45] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:54:45,027 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:45] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 09:54:45,033 - INFO - 127.0.0.1 - - [01/Apr/2025 09:54:45] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:55:02,642 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:02] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:55:02,661 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:02] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:55:02,663 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:02] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 09:55:02,676 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:02] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 09:55:02,677 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:02] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:55:02,677 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:55:02,683 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:02] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:55:21,430 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 09:55:21,431 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 09:55:21,432 - INFO -  * Restarting with stat
+2025-04-01 09:55:21,946 - WARNING -  * Debugger is active!
+2025-04-01 09:55:21,951 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 09:55:24,359 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:24] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 09:55:24,514 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:24] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:55:24,522 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:55:24,524 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:24] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:55:26,783 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:26] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:55:26,807 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:26] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:55:26,809 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:26] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 09:55:26,815 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:26] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 09:55:26,816 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:55:26,817 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:26] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:55:26,832 - INFO - 127.0.0.1 - - [01/Apr/2025 09:55:26] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:56:58,887 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 09:56:58,887 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 09:56:58,888 - INFO -  * Restarting with stat
+2025-04-01 09:56:59,414 - WARNING -  * Debugger is active!
+2025-04-01 09:56:59,420 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 09:57:03,557 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:03] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 09:57:03,721 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:03] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:57:03,734 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:03] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:57:03,738 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:57:06,058 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:06] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:57:06,079 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:06] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:57:06,082 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:06] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 09:57:06,095 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:06] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:57:06,095 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:57:06,096 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:06] "GET /static/js/face-capture.js HTTP/1.1" 200 -
+2025-04-01 09:57:06,143 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:06] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:57:24,136 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:24] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:57:24,152 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:24] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:57:24,158 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:24] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 09:57:24,165 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:57:24,168 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:24] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:57:24,169 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:24] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 09:57:24,180 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:24] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:57:39,871 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 09:57:39,871 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 09:57:39,872 - INFO -  * Restarting with stat
+2025-04-01 09:57:40,372 - WARNING -  * Debugger is active!
+2025-04-01 09:57:40,376 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 09:57:44,519 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:44] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 09:57:44,639 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:44] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:57:44,646 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:57:44,646 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:44] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 09:57:46,788 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:46] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:57:46,810 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:46] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 09:57:46,812 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:46] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 09:57:46,823 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:46] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 09:57:46,824 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 09:57:46,827 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:46] "GET /static/js/face-capture.js HTTP/1.1" 200 -
+2025-04-01 09:57:46,837 - INFO - 127.0.0.1 - - [01/Apr/2025 09:57:46] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:04:14,861 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 10:04:14,862 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 10:04:14,864 - INFO -  * Restarting with stat
+2025-04-01 10:04:15,567 - WARNING -  * Debugger is active!
+2025-04-01 10:04:15,571 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 10:04:17,454 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:17] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 10:04:17,623 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:17] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:04:17,633 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:04:17,661 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:17] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:04:20,667 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:20] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:04:20,691 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:20] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:04:20,696 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:20] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:04:20,712 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:20] "GET /static/js/face-capture.js HTTP/1.1" 200 -
+2025-04-01 10:04:20,715 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:20] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:04:20,716 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:04:20,723 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:20] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:04:30,893 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:30] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:04:30,913 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:30] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:04:30,917 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:30] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:04:30,922 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:04:30,931 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:30] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:04:30,934 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:30] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:04:30,944 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:30] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:04:32,263 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:32] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:04:32,283 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:32] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:04:32,287 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:32] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:04:32,290 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:04:32,293 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:32] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:04:32,306 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:32] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:04:32,322 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:32] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:04:33,847 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:33] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:04:33,867 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:33] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:04:33,874 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:33] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:04:33,878 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:04:33,882 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:33] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:04:33,883 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:33] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:04:33,890 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:33] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:04:46,859 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:46] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:04:46,877 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:46] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:04:46,884 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:46] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:04:46,888 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:46] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:04:46,889 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:04:46,890 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:46] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:04:46,900 - INFO - 127.0.0.1 - - [01/Apr/2025 10:04:46] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:05:00,362 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:00] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:05:00,389 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:00] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:05:00,394 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:00] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:05:00,400 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:05:00,409 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:00] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:05:00,409 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:00] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:05:00,418 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:00] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:05:21,963 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 10:05:21,964 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 10:05:21,966 - INFO -  * Restarting with stat
+2025-04-01 10:05:22,460 - WARNING -  * Debugger is active!
+2025-04-01 10:05:22,465 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 10:05:26,133 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:26] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 10:05:26,255 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:26] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:05:26,261 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:05:26,264 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:26] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:05:29,209 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:29] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:05:29,227 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:29] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:05:29,233 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:29] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:05:29,237 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:05:29,239 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:29] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:05:29,239 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:29] "GET /static/js/face-capture.js HTTP/1.1" 200 -
+2025-04-01 10:05:29,250 - INFO - 127.0.0.1 - - [01/Apr/2025 10:05:29] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:10:49,142 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 10:10:49,143 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 10:10:49,144 - INFO -  * Restarting with stat
+2025-04-01 10:10:49,635 - WARNING -  * Debugger is active!
+2025-04-01 10:10:49,639 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 10:10:52,018 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:52] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 10:10:52,157 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:52] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:10:52,163 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:10:52,171 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:52] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:10:55,668 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:55] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:10:55,690 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:55] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:10:55,694 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:55] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:10:55,705 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:55] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:10:55,707 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:10:55,708 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:55] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:10:55,750 - INFO - 127.0.0.1 - - [01/Apr/2025 10:10:55] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:11:19,178 - INFO - 127.0.0.1 - - [01/Apr/2025 10:11:19] "[31m[1mPOST /register/ HTTP/1.1[0m" 413 -
+2025-04-01 10:12:54,918 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 10:12:54,918 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 10:12:54,920 - INFO -  * Restarting with stat
+2025-04-01 10:12:55,419 - WARNING -  * Debugger is active!
+2025-04-01 10:12:55,424 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 10:12:58,261 - INFO - 127.0.0.1 - - [01/Apr/2025 10:12:58] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 10:12:58,422 - INFO - 127.0.0.1 - - [01/Apr/2025 10:12:58] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:12:58,423 - INFO - 127.0.0.1 - - [01/Apr/2025 10:12:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:12:58,432 - INFO - 127.0.0.1 - - [01/Apr/2025 10:12:58] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:13:02,331 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:02] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:13:02,352 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:02] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:13:02,358 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:02] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:13:02,363 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:13:02,364 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:02] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:13:02,365 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:02] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:13:02,380 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:02] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:13:29,022 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:29] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:13:29,039 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:29] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:13:29,045 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:29] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:13:29,048 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:13:29,049 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:29] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:13:29,050 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:29] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:13:29,064 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:29] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:13:36,174 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:36] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:13:36,190 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:36] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:13:36,195 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:36] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:13:36,203 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:13:36,207 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:36] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:13:36,210 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:36] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:13:36,217 - INFO - 127.0.0.1 - - [01/Apr/2025 10:13:36] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:15:52,419 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:52] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:15:52,447 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:52] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:15:52,456 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:52] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:15:52,463 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:15:52,464 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:52] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:15:52,465 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:52] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:15:52,525 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:52] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:15:57,872 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:57] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:15:57,897 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:57] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:15:57,902 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:57] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:15:57,912 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:15:57,915 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:57] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:15:57,917 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:57] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:15:57,981 - INFO - 127.0.0.1 - - [01/Apr/2025 10:15:57] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:17:08,572 - INFO - 127.0.0.1 - - [01/Apr/2025 10:17:08] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:17:08,598 - INFO - 127.0.0.1 - - [01/Apr/2025 10:17:08] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:17:08,605 - INFO - 127.0.0.1 - - [01/Apr/2025 10:17:08] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:17:08,619 - INFO - 127.0.0.1 - - [01/Apr/2025 10:17:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:17:08,625 - INFO - 127.0.0.1 - - [01/Apr/2025 10:17:08] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:17:08,631 - INFO - 127.0.0.1 - - [01/Apr/2025 10:17:08] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:17:08,669 - INFO - 127.0.0.1 - - [01/Apr/2025 10:17:08] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:18:52,676 - INFO - 127.0.0.1 - - [01/Apr/2025 10:18:52] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:18:52,714 - INFO - 127.0.0.1 - - [01/Apr/2025 10:18:52] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:18:52,733 - INFO - 127.0.0.1 - - [01/Apr/2025 10:18:52] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:18:52,737 - INFO - 127.0.0.1 - - [01/Apr/2025 10:18:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:18:52,770 - INFO - 127.0.0.1 - - [01/Apr/2025 10:18:52] "GET /static/js/face-capture.js HTTP/1.1" 200 -
+2025-04-01 10:18:52,799 - INFO - 127.0.0.1 - - [01/Apr/2025 10:18:52] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:18:52,803 - INFO - 127.0.0.1 - - [01/Apr/2025 10:18:52] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:19:11,787 - INFO - 127.0.0.1 - - [01/Apr/2025 10:19:11] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:19:11,862 - INFO - 127.0.0.1 - - [01/Apr/2025 10:19:11] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:19:11,892 - INFO - 127.0.0.1 - - [01/Apr/2025 10:19:11] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:19:11,900 - INFO - 127.0.0.1 - - [01/Apr/2025 10:19:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:19:11,948 - INFO - 127.0.0.1 - - [01/Apr/2025 10:19:11] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 10:19:11,981 - INFO - 127.0.0.1 - - [01/Apr/2025 10:19:11] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:19:11,996 - INFO - 127.0.0.1 - - [01/Apr/2025 10:19:11] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:20:24,587 - INFO - 127.0.0.1 - - [01/Apr/2025 10:20:24] "[31m[1mPOST /register/ HTTP/1.1[0m" 413 -
+2025-04-01 10:24:48,281 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:48] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 10:24:48,313 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:48] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:24:48,314 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:24:48,415 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:48] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 10:24:52,637 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:52] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:24:52,677 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:52] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 10:24:52,678 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:52] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 10:24:52,690 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:52] "GET /static/js/face-capture.js HTTP/1.1" 200 -
+2025-04-01 10:24:52,693 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 10:24:52,693 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:52] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 10:24:52,737 - INFO - 127.0.0.1 - - [01/Apr/2025 10:24:52] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:50:08,044 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 16:50:08,045 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 16:50:08,047 - INFO -  * Restarting with stat
+2025-04-01 16:50:08,671 - WARNING -  * Debugger is active!
+2025-04-01 16:50:08,678 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 16:50:10,609 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:10] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 16:50:10,834 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:10] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:50:10,840 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:50:10,855 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:10] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:50:13,437 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:13] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 16:50:13,472 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:13] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:50:13,476 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:13] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 16:50:13,488 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:50:13,490 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:13] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 16:50:13,490 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:13] "GET /static/js/face-capture.js HTTP/1.1" 200 -
+2025-04-01 16:50:13,540 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:13] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:50:36,415 - INFO - New user registered: HariNew
+2025-04-01 16:50:36,436 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:36] "POST /register/ HTTP/1.1" 200 -
+2025-04-01 16:50:36,464 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:36] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:50:36,473 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:50:36,522 - INFO - 127.0.0.1 - - [01/Apr/2025 16:50:36] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:51:24,642 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 16:51:24,643 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 16:51:24,644 - INFO -  * Restarting with stat
+2025-04-01 16:51:25,124 - WARNING -  * Debugger is active!
+2025-04-01 16:51:25,128 - INFO -  * Debugger PIN: 842-270-011
+2025-04-01 16:51:27,638 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:27] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 16:51:31,076 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:31] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 16:51:31,198 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:31] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:51:31,205 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:51:31,206 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:31] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:51:41,255 - INFO - Starting face login process
+2025-04-01 16:51:46,667 - WARNING - Face recognition failed within timeout
+2025-04-01 16:51:46,678 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:46] "POST /login/face HTTP/1.1" 200 -
+2025-04-01 16:51:46,704 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:46] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:51:46,716 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:51:46,765 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:46] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:51:58,316 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:58] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 16:51:58,347 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:58] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:51:58,354 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:58] "[33mGET /static/css/register.css?v=1.0 HTTP/1.1[0m" 404 -
+2025-04-01 16:51:58,361 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:51:58,362 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:58] "GET /register/ HTTP/1.1" 200 -
+2025-04-01 16:51:58,363 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:58] "[36mGET /static/js/face-capture.js HTTP/1.1[0m" 304 -
+2025-04-01 16:51:58,422 - INFO - 127.0.0.1 - - [01/Apr/2025 16:51:58] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:52:40,172 - INFO - 127.0.0.1 - - [01/Apr/2025 16:52:40] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 16:52:40,200 - INFO - 127.0.0.1 - - [01/Apr/2025 16:52:40] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:52:40,220 - INFO - 127.0.0.1 - - [01/Apr/2025 16:52:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:52:40,284 - INFO - 127.0.0.1 - - [01/Apr/2025 16:52:40] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:52:46,509 - INFO - Starting face login process
+2025-04-01 16:52:47,882 - INFO - Successful face login for user: HariNew
+2025-04-01 16:52:48,305 - INFO - 127.0.0.1 - - [01/Apr/2025 16:52:48] "[32mPOST /login/face HTTP/1.1[0m" 302 -
+2025-04-01 16:52:48,310 - INFO - 127.0.0.1 - - [01/Apr/2025 16:52:48] "GET /home HTTP/1.1" 200 -
+2025-04-01 16:52:56,444 - INFO - 127.0.0.1 - - [01/Apr/2025 16:52:56] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 16:52:56,462 - INFO - 127.0.0.1 - - [01/Apr/2025 16:52:56] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:52:56,467 - INFO - 127.0.0.1 - - [01/Apr/2025 16:52:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:52:56,526 - INFO - 127.0.0.1 - - [01/Apr/2025 16:52:56] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:54:16,523 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:16] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 16:54:16,549 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:16] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:54:16,556 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:54:16,626 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:16] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:54:28,373 - INFO - Starting face login process
+2025-04-01 16:54:33,804 - WARNING - Face recognition failed within timeout
+2025-04-01 16:54:33,814 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:33] "POST /login/face HTTP/1.1" 200 -
+2025-04-01 16:54:33,838 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:33] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:54:33,851 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:54:33,902 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:33] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -
+2025-04-01 16:54:39,963 - INFO - Starting face login process
+2025-04-01 16:54:44,533 - INFO - Successful face login for user: HariNew
+2025-04-01 16:54:44,955 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:44] "[32mPOST /login/face HTTP/1.1[0m" 302 -
+2025-04-01 16:54:44,960 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:44] "GET /home HTTP/1.1" 200 -
+2025-04-01 16:55:06,925 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:06] "GET /login/ HTTP/1.1" 200 -
+2025-04-01 16:55:06,952 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:06] "[36mGET /static/css/style.css?v=1.1 HTTP/1.1[0m" 304 -
+2025-04-01 16:55:06,962 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:55:07,008 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:07] "[36mGET /static/images/bg.jpg HTTP/1.1[0m" 304 -

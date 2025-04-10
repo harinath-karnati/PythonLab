@@ -6,7 +6,13 @@ import pickle
 import os
 import time
 import logging
+import base64
+import re
 from werkzeug.security import generate_password_hash, check_password_hash
+from PIL import Image
+import io
+import math
+from werkzeug.exceptions import RequestEntityTooLarge
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, 
@@ -86,6 +92,22 @@ def generate_face_embedding(image):
 
     except Exception as e:
         logging.error(f"Error in face embedding generation: {e}")
+        return None
+
+def process_webcam_image(data_url):
+    """Process webcam image from data URL."""
+    try:
+        # Extract base64 encoded image from data URL
+        image_data = re.sub('^data:image/.+;base64,', '', data_url)
+        image_bytes = base64.b64decode(image_data)
+        
+        # Convert to numpy array
+        image_array = np.frombuffer(image_bytes, np.uint8)
+        image = cv2.imdecode(image_array, cv2.IMREAD_COLOR)
+        
+        return image
+    except Exception as e:
+        logging.error(f"Error processing webcam image: {e}")
         return None
 
 @app.route('/')
@@ -207,40 +229,53 @@ def register():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        file = request.files['face_image']
-
-        # Validate inputs
-        if not username or not password or not file:
-            return render_template('register.html', msg='All fields are required')
-
-        # Save and process image
-        image_path = os.path.join('static/uploads', file.filename)
-        file.save(image_path)
         
-        try:
-            image = cv2.imread(image_path)
-            embedding = generate_face_embedding(image)
-            
-            if embedding is None:
-                os.remove(image_path)
-                return render_template('register.html', msg='Face not detected')
+        # Validate inputs
+        if not username or not password:
+            return render_template('register.html', msg='Username and password are required')
 
+        # Get image from webcam only (file upload removed)
+        webcam_image_data = request.form.get('webcam_image')
+        
+        if not webcam_image_data:
+            return render_template('register.html', msg='Webcam image is required')
+            
+        # Process webcam image
+        image = process_webcam_image(webcam_image_data)
+        if image is None:
+            return render_template('register.html', msg='Error processing webcam image')
+            
+        # Generate face embedding
+        embedding = generate_face_embedding(image)
+        
+        if embedding is None:
+            return render_template('register.html', msg='Face not detected in the image')
+
+        try:
             # Store in database
             with get_db_connection() as conn:
                 cursor = conn.cursor()
+                
+                # Check if username already exists
+                cursor.execute('SELECT * FROM accounts WHERE username = ?', (username,))
+                existing_account = cursor.fetchone()
+                
+                if existing_account:
+                    return render_template('register.html', msg='Username already exists')
+                
+                # Insert new account
                 cursor.execute(
                     'INSERT INTO accounts (username, password, face_embedding) VALUES (?, ?, ?)',
                     (username, password, pickle.dumps(embedding))
                 )
                 conn.commit()
 
-            os.remove(image_path)
             logging.info(f"New user registered: {username}")
             return render_template('login.html', msg='Registration successful!')
 
         except Exception as e:
             logging.error(f"Registration error: {e}")
-            return render_template('register.html', msg='Registration failed')
+            return render_template('register.html', msg=f'Registration failed: {str(e)}')
 
     return render_template('register.html')
 
@@ -256,7 +291,7 @@ def logout():
     return redirect(url_for('login'))
 
 if __name__ == '__main__':
-    # Ensure uploads directory exists
+    # Ensure uploads directory exists (still needed for potential future use)
     os.makedirs('static/uploads', exist_ok=True)
     os.makedirs('logs', exist_ok=True)
     
