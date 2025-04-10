@@ -218,3 +218,73 @@ a {
   text-align: center;
   margin-top: 15px;
 }
+.error-message {
+  background-color: #ffdddd;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Camera container styling */
+.camera-container {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* Video element styling */
+#videoElement {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+/* Captured image styling */
+#capturedImage {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  display: none;
+  margin: 10px auto;
+}
+
+/* Capture controls container */
+.capture-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Capture button styling */
+.capture-btn {
+  background-color: #4070f4;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.capture-btn:hover {
+  background-color: #2f5bc8;
+}
+
+/* Retake button styling */
+.retake-btn {
+  background-color: #f44040;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.retake-btn:hover {
+  background-color: #c82f2f;
+}

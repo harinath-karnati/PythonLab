@@ -6,28 +6,8 @@
     <title>User Registration</title>
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=1.1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}?v=1.0">
     <link rel="stylesheet" href="https://unilus.iconscout.com/release/v4.0.0/css/line.css">
-    <style>
-        .error-message {
-            background-color: #ffdddd;
-            border: 1px solid #ff0000;
-            color: #ff0000;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .preview-container {
-            text-align: center;
-            margin: 10px 0;
-        }
-        #imagePreview {
-            max-width: 200px;
-            max-height: 200px;
-            border-radius: 50%;
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <!-- Header -->
@@ -58,7 +38,7 @@
                 <div class="error-message">{{ msg }}</div>
             {% endif %}
 
-            <form action="{{ url_for('register') }}" method="post" enctype="multipart/form-data" id="registrationForm">
+            <form action="{{ url_for('register') }}" method="post" id="registrationForm">
                 <!-- Username Field -->
                 <div class="input_box">
                     <input type="text" name="username" placeholder="Enter your username" 
@@ -75,17 +55,25 @@
                     <small>At least 8 characters, 1 uppercase, 1 lowercase, 1 number</small>
                 </div>
 
-                <!-- Face Image Upload -->
+                <!-- Face Capture Section -->
                 <div class="input_box">
-                    <input type="file" name="face_image" accept="image/*" 
-                           required id="faceImageUpload">
-                    <i class="uil uil-camera"></i>
-                    <small>Upload a clear front-facing photo</small>
+                    <label for="faceCapture"><i class="uil uil-camera"></i> Face Capture</label>
+                    <small>Please capture a clear front-facing photo with your webcam</small>
                 </div>
 
-                <!-- Image Preview Container -->
-                <div class="preview-container">
-                    <img id="imagePreview" src="#" alt="Image Preview">
+                <!-- Camera Feed and Capture Controls -->
+                <div class="camera-container">
+                    <video id="videoElement" autoplay playsinline></video>
+                    <canvas id="canvas" style="display:none;"></canvas>
+                    <img id="capturedImage" src="#" alt="Captured Image">
+                    
+                    <div class="capture-controls">
+                        <button type="button" id="captureBtn" class="capture-btn">Capture Photo</button>
+                        <button type="button" id="retakeBtn" class="retake-btn">Retake Photo</button>
+                    </div>
+                    
+                    <!-- Hidden input to store the captured image data -->
+                    <input type="hidden" name="webcam_image" id="webcamImageData">
                 </div>
 
                 <!-- Submit Button -->
@@ -101,31 +89,6 @@
     </div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script>
-        // Auto-show the form when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            const home = document.querySelector(".home");
-            if (home) {
-                home.classList.add("show");
-            }
-        });
-        
-        // Image preview functionality
-        document.getElementById('faceImageUpload').addEventListener('change', function(event) {
-            const file = event.target.files[0];
-            const previewImg = document.getElementById('imagePreview');
-            
-            if (file) {
-                const reader = new FileReader();
-                
-                reader.onload = function(e) {
-                    previewImg.src = e.target.result;
-                    previewImg.style.display = 'block';
-                }
-                
-                reader.readAsDataURL(file);
-            }
-        });
-    </script>
+    <script src="{{ url_for('static', filename='js/face-capture.js') }}"></script>
 </body>
 </html>

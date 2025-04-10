@@ -109,14 +109,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 // Face image validation (for registration)
-                const faceImageInput = form.querySelector('input[name="face_image"]');
-                if (faceImageInput) {
-                    if (!faceImageInput.files || faceImageInput.files.length === 0) {
-                        e.preventDefault();
-                        alert('Please upload a face image');
-                        return;
-                    }
-                }
+                // const faceImageInput = form.querySelector('input[name="face_image"]');
+                // if (faceImageInput) {
+                //     if (!faceImageInput.files || faceImageInput.files.length === 0) {
+                //         e.preventDefault();
+                //         alert('Please upload a face image');
+                //         return;
+                //     }
+                // }
             });
         });
     };
