@@ -168,11 +168,11 @@ def login_face():
                 break
 
             # Display countdown
-            remaining_time = max(0, int(timeout_duration - (time.time() - start_time)))
-            cv2.putText(frame, f"Time Remaining: {remaining_time}s", 
-                        (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+         #   remaining_time = max(0, int(timeout_duration - (time.time() - start_time)))
+         #   cv2.putText(frame, f"Time Remaining: {remaining_time}s", 
+         #               (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
             
-            cv2.imshow("Face ID Login", frame)
+         #   cv2.imshow("Face ID Login", frame)
 
             embedding = generate_face_embedding(frame)
 
@@ -281,9 +281,9 @@ def register():
 
 @app.route('/home')
 def home():
-    if 'loggedin' in session:
-        return f"Welcome {session['username']}!"
-    return redirect(url_for('login'))
+    if 'loggedin' not in session:
+        return redirect(url_for('login'))
+    return render_template('home.html', username=session['username'])
 
 @app.route('/logout')
 def logout():

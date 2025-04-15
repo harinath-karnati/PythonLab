@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=1.1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}?v=1.0">
+    <link rel="stylesheet" href="https://unilus.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav_logo">Hari's CodingLab</a>
+  
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Home</a>
+                    <a href="#" class="nav_link">Product</a>
+                    <a href="#" class="nav_link">Services</a>
+                    <a href="#" class="nav_link">Contact</a>
+                    <a href="{{ url_for('logout') }}" class="nav_link">Logout</a>
+                </li>
+            </ul> 
+        </nav>
+    </header>
+
+    <div class="home"> 
+        <div class="dashboard-container">
+            <h2>Welcome, {{ username }}!</h2>
+            
+            <div class="tiles-container">
+                <!-- Weather Tile -->
+                <div class="tile">
+                    <div class="tile-header">
+                        <h3>Weather</h3>
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="tile-content">
+                        <div class="weather-info">
+                            <div class="weather-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <div class="weather-temp">75°F</div>
+                            <div class="weather-location">Hosuton, TX</div>
+                            <div class="weather-description">Sunny</div>
+                        </div>
+                    </div>
+                    <div class="tile-footer">
+                        <a href="https://www.msn.com/en-us/weather/forecast/in-Houston,TX" target="_blank">Full Weather Analysis <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Stocks Tile -->
+                <div class="tile">
+                    <div class="tile-header">
+                        <h3>Stocks</h3>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="tile-content">
+                        <ul class="stock-list">
+                            <li class="stock-item">
+                                <span class="stock-name">AAPL</span>
+                                <span class="stock-price">$187.40</span>
+                                <span class="stock-change up"><i class="fas fa-caret-up"></i> 1.2%</span>
+                            </li>
+                            <li class="stock-item">
+                                <span class="stock-name">NVDA</span>
+                                <span class="stock-price">$124.05</span>
+                                <span class="stock-change up"><i class="fas fa-caret-up"></i> 2.5%</span>
+                            </li>
+                            <li class="stock-item">
+                                <span class="stock-name">MSFT</span>
+                                <span class="stock-price">$415.75</span>
+                                <span class="stock-change down"><i class="fas fa-caret-down"></i> 0.8%</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tile-footer">
+                        <a href="https://finance.yahoo.com" target="_blank">Trending Stock Analysis <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- AI News Tile -->
+                <div class="tile">
+                    <div class="tile-header">
+                        <h3>AI News</h3>
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="tile-content">
+                        <div class="news-list">
+                            <div class="news-item">
+                                <h4>New Language Model Breakthrough</h4>
+                                <p>Researchers announce advancements in multimodal AI systems...</p>
+                            </div>
+                            <div class="news-item">
+                                <h4>AI Regulation Updates</h4>
+                                <p>Governments worldwide considering new AI safety frameworks...</p>
+                            </div>
+                            <div class="news-item">
+                                <h4>AI in Healthcare</h4>
+                                <p>New diagnostic tools powered by AI show promising results...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile-footer">
+                        <a href="https://www.theverge.com/ai-artificial-intelligence" target="_blank">More AI News <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,8 +1,22 @@
 // Auto-show the form when page loads
 document.addEventListener('DOMContentLoaded', function() {
     const home = document.querySelector(".home");
-    if (home) {
-        home.classList.add("show");
+    const formContainer = document.querySelector(".form_container");
+    
+    // Check if there's an error message and auto-open form if needed
+    const errorMsg = document.querySelector(".form_container p[style*='color: red']");
+    if (errorMsg && errorMsg.textContent.trim() !== '') {
+        if (home) home.classList.add("show");
+        if (formContainer) formContainer.classList.add("active");
+        
+        // If there was a face recognition error, update button text
+        const faceLoginForm = document.getElementById('faceLoginForm');
+        if (faceLoginForm && errorMsg.textContent.includes('Face recognition failed')) {
+            const faceIdButton = faceLoginForm.querySelector('button');
+            if (faceIdButton) {
+                faceIdButton.textContent = 'Re-take Face ID';
+            }
+        }
     }
     
     // Initialize webcam
@@ -20,10 +34,17 @@ function startWebcam() {
     const capturedImage = document.getElementById('capturedImage');
     const webcamImageData = document.getElementById('webcamImageData');
     
+    // If any of the required elements aren't present, we're not on the right page
+    if (!video || !canvas) {
+        return;
+    }
+    
     // Check if form submission should be allowed
     function updateFormSubmitStatus() {
         const submitBtn = document.querySelector('button[type="submit"]');
-        submitBtn.disabled = !webcamImageData.value;
+        if (submitBtn) {
+            submitBtn.disabled = !webcamImageData.value;
+        }
     }
     
     // Initial check
@@ -89,75 +110,165 @@ function startWebcam() {
     }
     
     // Capture photo
-    captureBtn.addEventListener('click', async function() {
-        const context = canvas.getContext('2d');
-        
-        // Set canvas dimensions to match video
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
-        
-        // Draw current video frame to canvas
-        context.drawImage(video, 0, 0, canvas.width, canvas.height);
-        
-        // Convert canvas to data URL (uncompressed)
-        const rawImageDataUrl = canvas.toDataURL('image/jpeg');
-        
-        try {
-            // Compress the image to prevent "Request entity too large" errors
-            const compressedImageDataUrl = await compressImage(rawImageDataUrl, 500); // Max 500KB
+    if (captureBtn) {
+        captureBtn.addEventListener('click', async function() {
+            const context = canvas.getContext('2d');
             
-            // Update hidden input with compressed image data
-            webcamImageData.value = compressedImageDataUrl;
+            // Set canvas dimensions to match video
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
             
-            // Show captured image
-            capturedImage.src = compressedImageDataUrl;
-            capturedImage.style.display = 'block';
+            // Draw current video frame to canvas
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
             
-            // Hide video, show retake button, hide capture button
-            video.style.display = 'none';
-            retakeBtn.style.display = 'inline-block';
-            captureBtn.style.display = 'none';
+            // Convert canvas to data URL (uncompressed)
+            const rawImageDataUrl = canvas.toDataURL('image/jpeg');
+            
+            try {
+                // Compress the image to prevent "Request entity too large" errors
+                const compressedImageDataUrl = await compressImage(rawImageDataUrl, 500); // Max 500KB
+                
+                // Update hidden input with compressed image data
+                webcamImageData.value = compressedImageDataUrl;
+                
+                // Show captured image
+                capturedImage.src = compressedImageDataUrl;
+                capturedImage.style.display = 'block';
+                
+                // Hide video, show retake button, hide capture button
+                video.style.display = 'none';
+                retakeBtn.style.display = 'inline-block';
+                captureBtn.style.display = 'none';
+                
+                // Update form submit button
+                updateFormSubmitStatus();
+            } catch (error) {
+                console.error("Error compressing image:", error);
+                alert("There was an error processing your photo. Please try again.");
+            }
+        });
+    }
+    
+    // Retake photo
+    if (retakeBtn) {
+        retakeBtn.addEventListener('click', function() {
+            // Clear captured image
+            capturedImage.style.display = 'none';
+            webcamImageData.value = '';
+            
+            // Show video, hide retake button, show capture button
+            video.style.display = 'block';
+            retakeBtn.style.display = 'none';
+            captureBtn.style.display = 'inline-block';
             
             // Update form submit button
             updateFormSubmitStatus();
-        } catch (error) {
-            console.error("Error compressing image:", error);
-            alert("There was an error processing your photo. Please try again.");
-        }
-    });
+        });
+    }
     
-    // Retake photo
-    retakeBtn.addEventListener('click', function() {
-        // Clear captured image
-        capturedImage.style.display = 'none';
-        webcamImageData.value = '';
-        
-        // Show video, hide retake button, show capture button
-        video.style.display = 'block';
-        retakeBtn.style.display = 'none';
-        captureBtn.style.display = 'inline-block';
-        
-        // Update form submit button
-        updateFormSubmitStatus();
-    });
+    // Handle form submission for registration
+    const registrationForm = document.getElementById('registrationForm');
+    if (registrationForm) {
+        registrationForm.addEventListener('submit', function(event) {
+            if (!webcamImageData.value) {
+                event.preventDefault();
+                alert('Please capture your photo before registering.');
+                return;
+            }
+            
+            // Check image size
+            const sizeInKB = (webcamImageData.value.length - 22) * 0.75 / 1024;
+            if (sizeInKB > 1000) { // If still over 1MB
+                event.preventDefault();
+                alert('The captured image is too large. Please try capturing again with less detail or in better lighting.');
+                // Force retake
+                retakeBtn.click();
+            }
+        });
+    }
     
-    // Handle form submission
-    document.getElementById('registrationForm').addEventListener('submit', function(event) {
-        if (!webcamImageData.value) {
-            event.preventDefault();
-            alert('Please capture your photo before registering.');
-            return;
+    // Handle Face ID login
+    const faceLoginForm = document.getElementById('faceLoginForm');
+    if (faceLoginForm) {
+        const faceIdButton = faceLoginForm.querySelector('button');
+        
+        // Check if there was an error with face recognition and update button text
+        const errorMsg = document.querySelector(".form_container p[style*='color: red']");
+        if (errorMsg && errorMsg.textContent.includes('Face recognition failed')) {
+            if (faceIdButton) {
+                faceIdButton.textContent = 'Re-take Face ID';
+            }
         }
         
-        // Check image size
-        const sizeInKB = (webcamImageData.value.length - 22) * 0.75 / 1024;
-        if (sizeInKB > 1000) { // If still over 1MB
-            event.preventDefault();
-            alert('The captured image is too large. Please try capturing again with less detail or in better lighting.');
-            // Force retake
-            retakeBtn.click();
+        if (faceIdButton) {
+            faceIdButton.addEventListener('click', async function(e) {
+                e.preventDefault(); // Prevent immediate form submission
+                
+                // Change button text to indicate processing
+                faceIdButton.textContent = 'Scanning...';
+                faceIdButton.disabled = true;
+                
+                try {
+                    // Access webcam without showing the video
+                    const stream = await navigator.mediaDevices.getUserMedia({
+                        video: true,
+                        audio: false
+                    });
+                    
+                    // Create temporary video element to capture the stream
+                    const tempVideo = document.createElement('video');
+                    tempVideo.srcObject = stream;
+                    tempVideo.autoplay = true;
+                    
+                    // Wait for video to be ready
+                    await new Promise(resolve => {
+                        tempVideo.onloadedmetadata = () => {
+                            tempVideo.play();
+                            resolve();
+                        };
+                    });
+                    
+                    // Wait a moment for camera to adjust
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    
+                    // Create a canvas to capture the image
+                    const tempCanvas = document.createElement('canvas');
+                    tempCanvas.width = tempVideo.videoWidth;
+                    tempCanvas.height = tempVideo.videoHeight;
+                    const ctx = tempCanvas.getContext('2d');
+                    
+                    // Draw video frame to canvas
+                    ctx.drawImage(tempVideo, 0, 0, tempCanvas.width, tempCanvas.height);
+                    
+                    // Get raw image data
+                    const rawImageData = tempCanvas.toDataURL('image/jpeg');
+                    
+                    // Compress image
+                    const compressedImageData = await compressImage(rawImageData, 500);
+                    
+                    // Set the webcam_image input value
+                    const webcamImageInput = document.getElementById('webcam_image');
+                    if (webcamImageInput) {
+                        webcamImageInput.value = compressedImageData;
+                    }
+                    
+                    // Stop all video tracks
+                    stream.getTracks().forEach(track => track.stop());
+                    
+                    // Submit the form
+                    faceLoginForm.submit();
+                    
+                } catch (error) {
+                    console.error('Error accessing webcam:', error);
+                    alert('Could not access webcam. Please check permissions and try again.');
+                    
+                    // Reset button state
+                    faceIdButton.textContent = 'Login with Face ID';
+                    faceIdButton.disabled = false;
+                }
+            });
         }
-    });
+    }
 }
 
 // Clean up when page is closed

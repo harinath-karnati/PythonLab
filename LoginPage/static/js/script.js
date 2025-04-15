@@ -9,6 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const pwShowHide = document.querySelectorAll(".pw_hide");
     const formOpenBtn = document.querySelector("#form-open");
 
+    // Check if there's an error message and auto-open form if needed
+    const errorMsg = document.querySelector(".form_container p[style*='color: red']");
+    if (errorMsg && errorMsg.textContent.trim() !== '') {
+        if (home) home.classList.add("show");
+        if (formContainer) formContainer.classList.add("active");
+    }
+
     // Password Visibility Toggle
     const togglePasswordVisibility = (passwordInput, icon) => {
         const isPassword = passwordInput.type === "password";
@@ -45,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (formOpenBtn) {
         formOpenBtn.addEventListener("click", () => {
             if (home) home.classList.add("show");
+            if (formContainer) formContainer.classList.add("active");
         });
     }
 
@@ -67,15 +75,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const handleFaceIDLogin = () => {
         const faceLoginForm = document.getElementById('faceLoginForm');
         if (faceLoginForm) {
+            // Check if there was an error with face recognition and update button text
+            const errorMsg = document.querySelector(".form_container p[style*='color: red']");
+            const faceIdButton = faceLoginForm.querySelector('button');
+            
+            if (errorMsg && errorMsg.textContent.includes('Face recognition failed')) {
+                if (faceIdButton) {
+                    faceIdButton.textContent = 'Re-take Face ID';
+                }
+            }
+            
             faceLoginForm.addEventListener('submit', (e) => {
                 // Optional: Add pre-submission checks or UI updates
                 console.log('Initiating Face ID Login');
                 
-                // You could add a loading spinner or disable the button
-                const submitButton = faceLoginForm.querySelector('button');
-                if (submitButton) {
-                    submitButton.disabled = true;
-                    submitButton.textContent = 'Scanning...';
+                // Update button state during scanning
+                if (faceIdButton) {
+                    faceIdButton.disabled = true;
+                    faceIdButton.textContent = 'Scanning...';
                 }
             });
         }
@@ -107,16 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         return;
                     }
                 }
-
-                // Face image validation (for registration)
-                // const faceImageInput = form.querySelector('input[name="face_image"]');
-                // if (faceImageInput) {
-                //     if (!faceImageInput.files || faceImageInput.files.length === 0) {
-                //         e.preventDefault();
-                //         alert('Please upload a face image');
-                //         return;
-                //     }
-                // }
             });
         });
     };
